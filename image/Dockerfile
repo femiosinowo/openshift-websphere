@@ -1,4 +1,3 @@
-FROM centos:7
 # (C) Copyright IBM Corporation 2018.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +13,7 @@ FROM centos:7
 # limitations under the License.
 
 #FROM registry.access.redhat.com/rhel7
-
+FROM centos:7
 #Add labels to the image
 LABEL maintainer="Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)" \
       name="WebSphere Liberty" \
