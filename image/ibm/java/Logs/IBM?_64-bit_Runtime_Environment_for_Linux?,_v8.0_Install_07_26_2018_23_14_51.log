@@ -1,0 +1,245 @@
+__________________________________________________________________________
+
+Thu Jul 26 23:14:52 UTC 2018
+
+Free Memory: 2096 kB
+Total Memory: 19072 kB
+
+4 Command Line Args:
+0:  -i
+1:  silent
+2:  -f
+3:  /tmp/response.properties
+
+java.class.path:
+    /tmp/install.dir.19/InstallerData
+    /tmp/install.dir.19/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.19/InstallerData
+    /tmp/install.dir.19/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.19/Linux/resource/jre/lib/amd64/compressedrefs/jclSC180/vm.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/se-service.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/cuda4j.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/math.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmorb.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmorbapi.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmcfw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmpkcs.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmcertpathfw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmjgssfw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmjssefw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmsaslfw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmjcefw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmjgssprovider.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmjsseprovider2.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/ibmcertpathprovider.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/xmldsigfw.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/xml.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.19/Linux/resource/jre/lib/dataaccess.jar
+
+java.ext.dirs:
+    /tmp/install.dir.19/Linux/resource/jre/lib/ext
+
+java.version                  == 1.8.0_171 (Java 1)
+java.vm.name                  == IBM J9 VM
+java.vm.vendor                == IBM Corporation
+java.vm.version               == 2.9
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.8
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.8
+java.vendor                   == IBM Corporation
+java.vendor.url               == http://www.ibm.com
+java.class.version            == 52.0
+java.library.path             == /tmp/install.dir.19/Linux/resource/jre/lib/amd64/compressedrefs:/tmp/install.dir.19/Linux/resource/jre/lib/amd64:/usr/lib64:/usr/lib
+java.compiler                 == NONE
+java.home                     == /tmp/install.dir.19/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 4.4.0-127-generic
+path.separator                == :
+file.separator                == /
+file.encoding                 == ANSI_X3.4-1968
+user.name                     == root
+user.home                     == /root
+user.dir                      == /tmp/install.dir.19
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Installed Feature(s) Application of IBM? 64-bit Runtime Environment for Linux?, v8.0
+
+Install Begin: JULY 26, 2018 11:14:41 PM UTC
+Install End: JULY 26, 2018 11:14:51 PM UTC
+
+Installed by InstallAnywhere 15.0 Premier Build 4538
+
+
+User Interactions
+-----------------
+
+
+Summary
+-------
+
+Installation: Successful.
+
+46 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Check Disk Space:         /opt/ibm/java
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 203,234,155; Free Disk Space: 2,194,641,465,344
+
+
+Check Disk Space:         /opt/ibm/java
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 203,234,155; Free Disk Space: 2,194,743,902,208
+
+Install Directory:        /opt/ibm/java/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/ibm/java/jre
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/ibm/java/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/ibm/java/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/notices.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/jre/.systemPrefs/.system.lock
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/jre/.systemPrefs/.systemRootModFile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/license_en.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/copyright
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/in/license_in.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/en/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/en/notices.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/en/license_en.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/en/copyright
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/ko/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/ko/license_ko.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/sl/license_sl.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/it/license_it.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/fr/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/fr/license_fr.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/cs/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/cs/license_cs.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/es/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/es/license_es.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/de/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/de/license_de.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/el/license_el.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/lt/license_lt.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/pt/license_pt.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/zh_TW/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/zh_TW/license_zh_TW.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/tr/license_tr.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/pt_BR/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/pl/license_pl.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/es_CA/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/ja/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/ja/license_ja.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/ru/license_ru.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/zh/readme.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/ibm/java/docs/zh/license_zh.txt
+                          Status: SUCCESSFUL
+
+Custom Action:            com.ibm.lex.lap.ia.LAFiles_IA
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file:   Create Soft Link
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file:   Delete tmp license files
+                          Status: SUCCESSFUL
+

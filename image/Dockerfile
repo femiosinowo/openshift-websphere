@@ -1,3 +1,4 @@
+FROM centos:7
 # (C) Copyright IBM Corporation 2018.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,9 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM centos:latest
+#FROM registry.access.redhat.com/rhel7
 
-LABEL maintainer="Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)"
+#Add labels to the image
+LABEL maintainer="Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)" \
+      name="WebSphere Liberty" \
+      vendor="IBM" \
+      version="1.0" \
+      release="18.0.0.2" \
+      summary="Image for WebSphere Liberty with IBM's JRE and RHEL" \
+      description="This image contains the WebSphere Liberty runtime with IBM's JRE and Red Hat Enterprise Linux as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker"
 
 # Operating System update
 RUN yum makecache fast \
@@ -25,11 +33,17 @@ RUN yum makecache fast \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /var/tmp/yum-*
+
+
+# Create directories we'll copy artifacts into
+RUN mkdir -p /opt/ibm/java && mkdir -p /opt/ibm/wlp && mkdir -p /opt/ibm/docker
     
 # Copy IBM Java, WebSphere Liberty and docker-server into the image
-COPY --from=websphere-liberty:kernel /opt/ibm/java /opt/ibm/java
-COPY --from=websphere-liberty:kernel /opt/ibm/wlp /opt/ibm/wlp
-COPY --from=websphere-liberty:kernel /opt/ibm/docker /opt/ibm/docker
+ADD ibm /opt/ibm
+
+#Add license file for certification
+RUN mkdir /licenses \
+    && curl -s https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.2/lafiles/en.html > /licenses/en.html
 
 
 # Set environment vars and shorcuts
@@ -40,9 +54,6 @@ ENV JAVA_HOME=/opt/ibm/java \
     RANDFILE=/tmp/.rnd \
     JVM_ARGS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/"
 
-# Install MicroProfile features
-RUN installUtility install --acceptLicense microProfile-1.3 \
-    && rm -rf /output/workarea /output/logs
 
 # Create symlinks && set permissions for non-root user
 RUN mkdir /logs \
@@ -70,3 +81,4 @@ COPY server.xml /config/
 EXPOSE 9080 9443
 ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/opt/ibm/wlp/bin/server", "run", "defaultServer"]
+
