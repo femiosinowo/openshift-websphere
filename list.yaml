@@ -40,7 +40,7 @@ items:
     name: websphere
   status:
     dockerImageRepository: ""
-- apiVersion: v1
+- apiVersion: apps.openshift.io/v1
   kind: DeploymentConfig
   metadata:
     creationTimestamp: null
@@ -52,6 +52,7 @@ items:
     replicas: 1
     selector:
       app: websphere
+      deploymentconfig: websphere
     strategy:
       resources: {}
       rollingParams:
@@ -66,6 +67,7 @@ items:
         creationTimestamp: null
         labels:
           app: websphere
+          deploymentconfig: websphere
       spec:
         containers:
         - image: ' '
@@ -73,6 +75,8 @@ items:
           name: websphere
           ports:
           - containerPort: 9080
+            protocol: TCP
+          - containerPort: 9443
             protocol: TCP
           resources: {}
           terminationMessagePath: /dev/termination-log
@@ -83,6 +87,7 @@ items:
         restartPolicy: Always
         securityContext: {}
         terminationGracePeriodSeconds: 30
+        schedulerName: default-scheduler
         #volumes:
         #- emptyDir: {}
         #  name: data
@@ -93,15 +98,20 @@ items:
     creationTimestamp: null
     labels:
       name: websphere
-      role: websphere
     name: websphere
   spec:
     ports:
-    - port: 9080
+    - name: 9080-tcp
+      port: 9080
       protocol: TCP
       targetPort: 9080
+    - name: 9443-tcp
+      port: 9443
+      protocol: TCP
+      targetPort: 9443
     selector:
-      redis-sentinel: "true"
+      app: websphere
+      deploymentconfig: websphere
     sessionAffinity: None
     type: ClusterIP
   status:
