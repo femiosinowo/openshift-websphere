@@ -92,6 +92,17 @@ items:
         #- emptyDir: {}
         #  name: data
     test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - websphere
+        from:
+          kind: ImageStreamTag
+          name: websphere:latest
+      type: ImageChange
+
 - apiVersion: v1
   kind: Service
   metadata:
