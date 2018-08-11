@@ -16,5 +16,5 @@
 
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true"/>
-<quickStartSecurity userName="admin" userPassword="{xor}Lz4sLCgwLTs="/>
+<quickStartSecurity userName="admin" userPassword="admin"/>
 </server>
