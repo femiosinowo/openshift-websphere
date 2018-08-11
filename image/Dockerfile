@@ -55,7 +55,7 @@ ENV JAVA_HOME=/opt/ibm/java \
 
 # Install MicroProfile features
 RUN installUtility install --acceptLicense \
-    microProfile-1.3 localConnector-1.0 adminCenter-1.0 \
+    microProfile-1.3 localConnector-1.0 adminCenter-1.0 servlet-4.0 \
     && rm -rf /output/workarea /output/logs
 
 
