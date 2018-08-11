@@ -54,7 +54,8 @@ ENV JAVA_HOME=/opt/ibm/java \
     JVM_ARGS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/"
 
 # Install MicroProfile features
-RUN installUtility install --acceptLicense microProfile-1.3 \
+RUN installUtility install --acceptLicense \
+    microProfile-1.3 localConnector-1.0 adminCenter-1.0 \
     && rm -rf /output/workarea /output/logs
 
 
